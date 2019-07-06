@@ -4,7 +4,7 @@ function getCentury(year) {
   if (year >= 1 && year <= 2017) {
     return century;
   } else {
-    return 'The year is incorrect.';
+    return 'Год указан не правильно';
   }
 }
 

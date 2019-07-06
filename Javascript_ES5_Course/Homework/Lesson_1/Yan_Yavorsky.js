@@ -8,5 +8,3 @@ function getCentury(year) {
   }
 }
 
-console.log(getCentury());
-

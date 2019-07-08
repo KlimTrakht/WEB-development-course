@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Century identifier</title>
+    <link rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <style>
+      .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+      }
+
+      .box {
+        min-width: 25%;
+        min-height: 30%;
+        background: #ffffff;
+        border: 2px solid #3ed167;
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 0px 4px 4px rgba(22, 214, 76, 0.25);
+      }
+
+      .box__input {
+        height: 48px;
+        width: 100%;
+        border: 1px solid #3ed167;
+        font-size: 20px;
+        box-shadow: 0px 3px 3px rgba(22, 214, 76, 0.25);
+        border-radius: 25px;
+        color: #3ed167;
+        text-indent: 5%;
+      }
+      .box__input:focus {
+        border: 2px solid #3ed167;
+        box-shadow: 0px 4px 4px rgba(22, 214, 76, 0.25);
+      }
+      .box__button {
+        height: 48px;
+        width: 100%;
+        border: 2px solid #3ed167;
+        font-size: 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        color: #ffffff;
+        background: #3ed167;
+        margin: 25px 0;
+      }
+
+      .box__result {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: #3ed167;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="app" class="box">
+        <input
+          class="box__input"
+          type="text"
+          placeholder="Введите год"
+          v-model.trim="year"
+        />
+
+        <button class="box__button" v-on:click="calculate()">
+          Рассчитать столетие
+        </button>
+
+        <p class="box__result" v-if="result != ''">{{ result }}</p>
+      </div>
+    </div>
+
+    <script>
+      let app = new Vue({
+        el: "#app",
+        data: {
+          year: "",
+          result: ""
+        },
+        methods: {
+          calculate() {
+            if (this.year > 0 && this.year < 2018) {
+              if (this.year % 100 == 0) {
+                return (this.result = this.year / 100 + " столетие");
+              } else {
+                return (this.result =
+                  Math.floor(this.year / 100) + 1 + " столетие");
+              }
+            } else {
+              this.result = "Год указан не правильно";
+            }
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

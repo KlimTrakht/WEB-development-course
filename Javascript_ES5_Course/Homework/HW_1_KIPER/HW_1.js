@@ -1,25 +1,20 @@
 function getCentury ( year ) {
-    if ( year > 2017 || year < 1) {
-        console.log("Год указан не верно!");
-        return false;
-    }
+    
+    if ( year > 2017 || year < 1)
+        return "Год указан не верно!";
 
-    console.log (
-        year % 100 === 0
-        ? Math.trunc(year / 100)
-        : Math.trunc(year / 100) + 1
-    );
+    if( year % 100 === 0 )
+      return Math.trunc(year / 100);
 
+    return Math.trunc(year / 100) + 1;
+    
 }
 
-getCentury(0);
-getCentury(1);
-getCentury(2017);
-getCentury(2018);
-getCentury(101);
-getCentury(1996);
-getCentury(2005);
-getCentury(1853);
-getCentury(2303);
-getCentury(1905);
-getCentury(1700);
+console.log(getCentury(0));
+console.log(getCentury(1));
+console.log(getCentury(2017));
+console.log(getCentury(2018));
+console.log(getCentury(101));
+console.log(getCentury(2303));
+console.log(getCentury(1905));
+console.log(getCentury(1700));

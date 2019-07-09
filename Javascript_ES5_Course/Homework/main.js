@@ -14,5 +14,6 @@
             return gettingCentury();
         }
     }
+    
 alert(valueYear + ' год это ' + century + ' век')
 })();

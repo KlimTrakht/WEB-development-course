@@ -1,4 +1,5 @@
 function getSquare(n) {
+    if(n < 0) return 'Недопустимое значение';
     var centerLine = 1 + (n - 1) * 2;
     var otherLine = centerLine;
     var square = otherLine;
@@ -10,6 +11,7 @@ function getSquare(n) {
     }
     return square
 }
+getSquare(-1); // Недопустимое значение
 getSquare(1); // 1
 getSquare(2); // 5
 getSquare(3); // 13

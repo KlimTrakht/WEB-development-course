@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack --watch",
     "start:lesson1": "NODE_NAME=Lesson_1 npm run start",
-    "start:lesson2": "NODE_NAME=Lesson_2 npm run start"
+    "start:lesson2": "NODE_NAME=Lesson_2 npm run start",
+    "start:lesson3": "NODE_NAME=Lesson_3 npm run start"
   },
   "author": "",
   "license": "ISC",

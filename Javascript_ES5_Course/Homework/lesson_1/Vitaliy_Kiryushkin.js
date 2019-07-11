@@ -1,8 +1,4 @@
-function getCentury(year){
-    if( year < 1 || year > 2017){
-        console.log('Год указан не правильно');
-    }else{
-        return Math.ceil(year/100)
-    }
+function calcArea(n){
+  return (pow(n,2) + pow(--n,2)) && n > 0
 }
-console.log(getCentury(101))
+console.log(calcArea(3))

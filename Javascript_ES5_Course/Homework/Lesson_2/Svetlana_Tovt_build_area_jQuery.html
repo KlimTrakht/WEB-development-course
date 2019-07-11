@@ -92,20 +92,20 @@
     <script>
       $(function() {
         $("button").on("click", function() {
-          let n = $("#length").val();
+          const n = $("#length").val();
           $("#area").empty();
 
           function buildTable(n) {
-            let number_of_rows = 2 * n - 1;
-            let number_of_cols = 2 * n - 1;
+            const number_of_rows = 2 * n - 1;
+            const number_of_cols = 2 * n - 1;
 
-            let table_body = '<table border="1">';
+            let table_body = '<table>';
 
             let count = n - 1;
 
-            for (var i = 0; i < number_of_rows; i++) {
+            for (let i = 0; i < number_of_rows; i++) {
               table_body += "<tr>";
-              for (var j = 0; j < number_of_cols; j++) {
+              for (let j = 0; j < number_of_cols; j++) {
                 if (
                   j >= Math.abs(count) &&
                   j < number_of_cols - Math.abs(count)

@@ -6,7 +6,7 @@ function calculateArea(n) {
     return area;
   }
 
-  return "Not correct input data";
+  return "Неверно введены данные. Введите число от 1 и более.";
 }
 
 console.log(calculateArea(1));

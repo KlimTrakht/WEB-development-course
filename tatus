@@ -1,0 +1,452 @@
+[33mcommit af1bb5eb47e61fc4272876c6a2a63d0621719ca3[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: kiryushkinvitalik94 <46486362+kiryushkinvitalik94@users.noreply.github.com>
+Date:   Thu Jul 11 10:49:40 2019 +0300
+
+    fetch remote klim
+
+[33mcommit b2b442172a8fccbe41c84579c291765677767f6e[m[33m ([m[1;31mklim/master[m[33m)[m
+Author: Prokhor Zimon <prohor.z@kultprosvet.net>
+Date:   Wed Jul 10 09:33:42 2019 +0300
+
+    init Lesson 3
+
+[33mcommit b74bc8481c639c538c679d3c036402dc971170f5[m
+Author: Prokhor Zimon <prohor.z@kultprosvet.net>
+Date:   Wed Jul 10 09:33:26 2019 +0300
+
+    add Lesson 2
+
+[33mcommit 96a6068118aa210414fb1680cc2f6fb89e1f5d6f[m
+Merge: 267936a 88f27aa
+Author: Klim <klim@kultprosvet.net>
+Date:   Tue Jul 9 22:52:10 2019 +0300
+
+    Merge pull request #20 from OlhaBrozhenets/master
+    
+    Add first homework
+
+[33mcommit 267936a2ff8f1620c144b93e5e09eff278293e25[m
+Merge: 9c7f818 d604489
+Author: Klim <klim@kultprosvet.net>
+Date:   Tue Jul 9 22:51:58 2019 +0300
+
+    Merge pull request #19 from denyshoropashnyi/master
+    
+    Denys Horopashnnyi Hometask#1.
+
+[33mcommit 9c7f818b2a40abacc774befd9eec6e9d704f82b5[m
+Merge: a47ef84 30d780d
+Author: Klim <klim@kultprosvet.net>
+Date:   Tue Jul 9 22:51:52 2019 +0300
+
+    Merge pull request #18 from Kudder1/master
+    
+    add getCentury script
+
+[33mcommit a47ef845aa4aa5e6b0f188e4c98f4a8bdb3e741d[m
+Merge: ecf6e86 d4bf02b
+Author: Klim <klim@kultprosvet.net>
+Date:   Tue Jul 9 22:51:44 2019 +0300
+
+    Merge pull request #17 from Heorhii90/master
+    
+    Lesson-1
+
+[33mcommit ecf6e86641e00e72ce80d3552dccad1b5cf779f4[m
+Merge: 2d556cd a41722e
+Author: Klim <klim@kultprosvet.net>
+Date:   Tue Jul 9 22:51:37 2019 +0300
+
+    Merge pull request #6 from yan-yavorsky/master
+    
+    Homework Lesson 1
+
+[33mcommit 2d556cdf55abbeca23ea6675d1fa6527f8eb39ab[m
+Merge: e93ad46 f60d482
+Author: Klim <klim@kultprosvet.net>
+Date:   Tue Jul 9 22:51:19 2019 +0300
+
+    Merge pull request #16 from kiryushkinvitalik94/master
+    
+    Add function getCentury
+
+[33mcommit e93ad4666c594713296fe9e6b535580b9d5a17ba[m
+Merge: af33028 9bfbdd4
+Author: Klim <klim@kultprosvet.net>
+Date:   Tue Jul 9 22:51:12 2019 +0300
+
+    Merge pull request #15 from yashuk803/master
+    
+    create new function getCentury
+
+[33mcommit af33028f811cee72cc8fe25585fdf108c93b990f[m
+Merge: a9e8309 11c6b8a
+Author: Klim <klim@kultprosvet.net>
+Date:   Tue Jul 9 22:51:05 2019 +0300
+
+    Merge pull request #14 from mstsp/master
+    
+    HW_Lesson_1
+
+[33mcommit a9e8309a8200ef5c3aa87b0d5ed3265bf4cecf06[m
+Merge: c105f23 c0ca91d
+Author: Klim <klim@kultprosvet.net>
+Date:   Tue Jul 9 22:50:57 2019 +0300
+
+    Merge pull request #13 from Vitaliy-ko/master
+    
+    Homework 1. Add getting century from year.
+
+[33mcommit c105f23de7ca337a5aa57f1b048b69d7aeb4daae[m
+Merge: a4f45d2 7ff25db
+Author: Klim <klim@kultprosvet.net>
+Date:   Tue Jul 9 22:50:51 2019 +0300
+
+    Merge pull request #12 from leogasmus/master
+    
+    Homework lesson 1
+
+[33mcommit a4f45d2eb9b28b1e305d5034d210b5e780425698[m
+Merge: dd784b0 8c2ba5b
+Author: Klim <klim@kultprosvet.net>
+Date:   Tue Jul 9 22:50:42 2019 +0300
+
+    Merge pull request #11 from chiperi/master
+    
+    HW_1 - ELENA KIPER
+
+[33mcommit dd784b0626c5e9ff2815f563cd38db0c3cbb2c23[m
+Merge: 25bee62 6ce5790
+Author: Klim <klim@kultprosvet.net>
+Date:   Tue Jul 9 22:50:26 2019 +0300
+
+    Merge pull request #10 from FesenkoE/master
+    
+    getCentury
+
+[33mcommit 25bee623537faeab12c6cf544c200937521c8482[m
+Merge: b440c6f c231f47
+Author: Klim <klim@kultprosvet.net>
+Date:   Tue Jul 9 22:50:17 2019 +0300
+
+    Merge pull request #9 from zubkoann/master
+    
+    homework lesson_1 (Zubko Anna)
+
+[33mcommit b440c6f2d7558b871252dba65bc0c5a0777da7e0[m
+Merge: 5286ba8 16983d0
+Author: Klim <klim@kultprosvet.net>
+Date:   Tue Jul 9 22:50:09 2019 +0300
+
+    Merge pull request #8 from inokqq/master
+    
+    homework 1
+
+[33mcommit 5286ba80a959f45871e3a219a06ad6e4cdde90ad[m
+Merge: 67d40e1 46e140b
+Author: Klim <klim@kultprosvet.net>
+Date:   Tue Jul 9 22:49:59 2019 +0300
+
+    Merge pull request #4 from SerhiiBulakh/master
+    
+    homework 1
+
+[33mcommit 67d40e11eb78ce27d75ef230c7d8c218f0f2f36e[m
+Merge: d2e4dc4 47127ad
+Author: Klim <klim@kultprosvet.net>
+Date:   Tue Jul 9 22:49:35 2019 +0300
+
+    Merge pull request #7 from OleksandrMalyk/master
+    
+    Aleksandr Malyk - Lesson_1 - homework
+
+[33mcommit d2e4dc40473edac2ee171dd162f219621a543632[m
+Merge: c19488a 8df5162
+Author: Klim <klim@kultprosvet.net>
+Date:   Tue Jul 9 22:49:26 2019 +0300
+
+    Merge pull request #5 from mhozyaenko/master
+    
+    Mariya Hozyaenko lesson 1 homework
+
+[33mcommit c19488a4cb1153252c878de051227469c653c694[m
+Merge: 29f42a7 d1944ea
+Author: Klim <klim@kultprosvet.net>
+Date:   Tue Jul 9 22:49:18 2019 +0300
+
+    Merge pull request #3 from loop-zoop/master
+    
+    Lesson_1: create function that calculates centuries
+
+[33mcommit 29f42a798e24a816416ce27432d75e856a04f587[m
+Merge: 475b708 83b9b70
+Author: Klim <klim@kultprosvet.net>
+Date:   Tue Jul 9 22:49:11 2019 +0300
+
+    Merge pull request #2 from khairuninandrey/master
+    
+    Homework#1 Khairunin Andrey
+
+[33mcommit 475b7086187cffa1c01bd2c6bc8a809f52b05f07[m
+Merge: 95a72d2 0904beb
+Author: Klim <klim@kultprosvet.net>
+Date:   Tue Jul 9 22:49:00 2019 +0300
+
+    Merge pull request #1 from Fongolcs/master
+    
+    Create Sergey_Serpichenko.js
+
+[33mcommit 88f27aac436f5ad7a2f4b1c68ddd63e9dd10fd03[m
+Author: Olha Brozhenets <olhabrozhenets@gmail.com>
+Date:   Tue Jul 9 21:35:50 2019 +0300
+
+    Add first homework
+
+[33mcommit d604489a695929671a58f4dbf48877e1decfa25a[m
+Author: Denys Horopashnyi <44978023+denyshoropashnyi@users.noreply.github.com>
+Date:   Tue Jul 9 15:47:59 2019 +0300
+
+    -check the correctness of  functions on examples.
+
+[33mcommit 9b2ec3973721a59e6cf84aaf01e935fa64c58ec8[m
+Author: Denys Horopashnyi <44978023+denyshoropashnyi@users.noreply.github.com>
+Date:   Tue Jul 9 15:44:23 2019 +0300
+
+    - add getCenturyNumber()
+    - add isCenturyNumberValid()
+
+[33mcommit 30d780de224c855ed1738ab0e9f5d23d55bb0836[m
+Author: Vladimir <45853973+Kudder1@users.noreply.github.com>
+Date:   Tue Jul 9 14:59:01 2019 +0300
+
+    add getCentury script
+
+[33mcommit d4bf02b9f81d4c1f5aa2c807aa6eee1b433f1a4f[m
+Author: Heorhii <heorhii.okhrimenko@gmail.com>
+Date:   Tue Jul 9 12:09:27 2019 +0300
+
+    Lesson-1/Heorhii_Okhrimenko.js
+
+[33mcommit b0b5af22fe2b2b8074bb3a49831e06e694ea0b40[m
+Author: Heorhii <heorhii.okhrimenko@gmail.com>
+Date:   Tue Jul 9 12:08:38 2019 +0300
+
+    Lesson-1/Heorhii_Okhrimenko.js
+
+[33mcommit 51c4f06a5ff45e27dc36b53c1f6859cfea8c6fca[m
+Author: Heorhii <heorhii.okhrimenko@gmail.com>
+Date:   Tue Jul 9 12:03:29 2019 +0300
+
+    Lesson-1
+
+[33mcommit f60d482610ee1b8c753d1a9bab768cac08590648[m
+Author: kiryushkinvitalik94 <46486362+kiryushkinvitalik94@users.noreply.github.com>
+Date:   Tue Jul 9 11:40:56 2019 +0300
+
+    Add function getCentury
+
+[33mcommit 8c2ba5b1e84a22940764ee710ae2bca05084f4db[m
+Author: chiperi <kiperelena6@gmail.com>
+Date:   Tue Jul 9 09:35:34 2019 +0300
+
+    Update HW_1.js
+    
+    Update getCentury function.
+
+[33mcommit 9bfbdd4242f446c456c67e8f43d8780bd668391e[m
+Merge: 95a72d2 6d60f60
+Author: Мария <yashuk803@gmail.com>
+Date:   Tue Jul 9 08:31:07 2019 +0300
+
+    Merge pull request #1 from yashuk803/get_-century
+    
+    create function getCentury
+
+[33mcommit 6d60f603cd2db57e3443e1727eef795b2bfeca94[m
+Author: Mariia128 <mariia.tarantsova@ipayless.co.il>
+Date:   Tue Jul 9 08:29:51 2019 +0300
+
+    create function getCentury
+
+[33mcommit 11c6b8a43d3325e00966d7cd5c9c766273b423b9[m
+Author: Svetlana Tovt <ms.tsp00@gmail.com>
+Date:   Tue Jul 9 00:24:49 2019 +0300
+
+    HW_Lesson_1
+
+[33mcommit c0ca91d5752eb922a4b7f1c0e6761a8f31eec62b[m
+Author: Vitaliy Kalenichenko <43729925+Vitaliy-ko@users.noreply.github.com>
+Date:   Tue Jul 9 00:04:14 2019 +0300
+
+    Add getting century from year
+
+[33mcommit 95a72d25acad1289d306c769c3afa6405bd023f0[m
+Author: prochor <prochorz@gmail.com>
+Date:   Mon Jul 8 22:58:54 2019 +0300
+
+    add just lesson.js
+
+[33mcommit 7ff25db379c7af63043079aa9ccc1d2f41af074d[m
+Author: Kirill Aleksyeyev <leogasmus@gmail.com>
+Date:   Mon Jul 8 22:16:24 2019 +0300
+
+    Homework lesson 1
+
+[33mcommit a1b6658e257c228e261b3b7ae8f22720bd3333fa[m
+Author: Elena Kiper <kiperelena6@gmail.com>
+Date:   Mon Jul 8 22:01:33 2019 +0300
+
+    Homework 1
+
+[33mcommit 042e66104f29e4d7e85dd67366b0b86697e21ce2[m
+Author: prochor <prochorz@gmail.com>
+Date:   Mon Jul 8 21:17:36 2019 +0300
+
+    Lesson 2 init
+
+[33mcommit 6ce579052aebadbb6b198a1f388f1237ce15f458[m
+Merge: 8530585 511ae0b
+Author: Fesenko Evgeniy <fesenkoe@ukr.net>
+Date:   Mon Jul 8 16:22:01 2019 +0300
+
+    Merge pull request #1 from FesenkoE/task1
+    
+    get century
+
+[33mcommit 511ae0b8f41c39deff977031bc5599ddec9d73d8[m
+Author: FesenkoE <fesenkoe@ukr.net>
+Date:   Mon Jul 8 16:18:53 2019 +0300
+
+    get century
+
+[33mcommit c231f47c6995fc3a28efc3df41b68e1ec984e59d[m
+Author: ft101586zaa <annazubko1986@gmail.com>
+Date:   Mon Jul 8 12:56:10 2019 +0300
+
+    added function getCentury
+
+[33mcommit 16983d0a9df4af77d49a45e5e3f396fbd39ab4a8[m
+Author: inokqq <inokqq@gmail.com>
+Date:   Mon Jul 8 00:13:36 2019 +0300
+
+    homework 1 reverse fix
+
+[33mcommit 33e9fdd44c2f5d7c31ac48fc093a788add6beeaa[m
+Author: inokqq <inokqq@gmail.com>
+Date:   Sun Jul 7 23:49:59 2019 +0300
+
+    homework 1 fix
+
+[33mcommit 1c518e9aaa9f370982af31654c83d7f05568c5fb[m
+Author: inokqq <inokqq@gmail.com>
+Date:   Sun Jul 7 23:47:36 2019 +0300
+
+    homework 1 fix
+
+[33mcommit c19e0c8c073731ad6cf05b13987fbdab2d516de3[m
+Author: inokqq <inokqq@gmail.com>
+Date:   Sun Jul 7 23:37:46 2019 +0300
+
+    homework 1
+
+[33mcommit 47127adf6d0a507b65b8ce8b536e052bc15e42d8[m
+Author: oleksandr.malyk92 <oleksandr.malyk92@gmail.com>
+Date:   Sun Jul 7 23:02:00 2019 +0300
+
+    add Lesson_1 homework solution
+
+[33mcommit a41722ee0687ef8b07a59547ad6500fac84a024f[m
+Author: Yan Yavorskiy <yanisyaworski@gmail.com>
+Date:   Sat Jul 6 17:00:34 2019 +0300
+
+    Change getCentury function
+
+[33mcommit 74e901682e657d857750ba69e8ebacff2f973d7d[m
+Author: Yan Yavorskiy <yanisyaworski@gmail.com>
+Date:   Sat Jul 6 16:55:19 2019 +0300
+
+    Change getCentury function
+
+[33mcommit 2d64fa3bf8f48560c0564fd2dc665de710ca4749[m
+Author: Yan Yavorskiy <yanisyaworski@gmail.com>
+Date:   Sat Jul 6 15:46:47 2019 +0300
+
+    Add getCentury function
+
+[33mcommit 8df516273edeab9e40182b35d82ee544ffd6b627[m
+Author: mhozyaenko <32595469+mhozyaenko@users.noreply.github.com>
+Date:   Fri Jul 5 21:27:21 2019 +0300
+
+    remove unnecessary check
+
+[33mcommit 21f73ff502518b29e323ae2f75c7bbf7a2f1d1a3[m
+Author: mhozyaenko <mhozyaenko@gmail.com>
+Date:   Fri Jul 5 21:20:01 2019 +0300
+
+    lesson 1 homework
+
+[33mcommit 46e140b1df3164dc7ad0fab9f81c732db0351e1c[m
+Author: unknown <serhiibulakh@gmail.com>
+Date:   Fri Jul 5 20:32:16 2019 +0300
+
+    homework 1
+
+[33mcommit d1944ea01b537ef79c347a29f52fc424c4e6d6a7[m
+Author: Anastasia Tsyganok <mandarinoriccio@gmail.com>
+Date:   Fri Jul 5 17:17:20 2019 +0300
+
+    Lesson_1: create function that calculates centuries
+
+[33mcommit 83b9b704b52b29ba0772f1b4ab2944b2eb55a458[m
+Author: Andrey Khairunin <khairuninandrey@gmail.com>
+Date:   Fri Jul 5 13:45:08 2019 +0300
+
+    Write task#1 solution in ES6 version
+
+[33mcommit 6beeaff10de1d46217161d9e28e33acb006b0853[m
+Author: Andrey Khairunin <khairuninandrey@gmail.com>
+Date:   Fri Jul 5 13:44:27 2019 +0300
+
+    Write task#1 solution in ES5 version
+
+[33mcommit 0904bebf983fdf0b537e0b1280bc3375b188c668[m
+Author: Fongolcs <fongolcs@gmail.com>
+Date:   Fri Jul 5 12:22:28 2019 +0300
+
+    Create Sergey_Serpichenko.js
+
+[33mcommit b2404962c42f8d87f568c4dd3333052baf3373bc[m
+Author: Andrey Khairunin <khairuninandrey@gmail.com>
+Date:   Fri Jul 5 12:19:13 2019 +0300
+
+    Update .gitignore
+
+[33mcommit 13e01e95e785c0ad6b9b436743363f96dc941008[m
+Author: Fongolcs <fongolcs@gmail.com>
+Date:   Fri Jul 5 12:18:04 2019 +0300
+
+    Create Sergey_Serpichenko.js
+
+[33mcommit 853058510fae6269b359e9f9deba2fa276359b76[m
+Author: Prokhor Zimon <prohor.z@kultprosvet.net>
+Date:   Fri Jul 5 09:42:33 2019 +0300
+
+    Add Javascript lesson 1
+
+[33mcommit 43df7449a9e110d05e8b3c4dfda80ee998f924f8[m
+Author: Prokhor Zimon <prohor.z@kultprosvet.net>
+Date:   Thu Jul 4 17:04:03 2019 +0300
+
+    add webpack
+
+[33mcommit ee89d18273f66fe2020a96c1dbd5dc809d2e2173[m
+Author: Prokhor Zimon <prohor.z@kultprosvet.net>
+Date:   Thu Jul 4 16:52:41 2019 +0300
+
+    add git ignore
+
+[33mcommit 20e1bfad63bbfc7edcce7bef48e076529493e064[m
+Author: Klim Trakht <klim@kultprosvet.net>
+Date:   Thu Jul 4 15:50:43 2019 +0300
+
+    Initial commit

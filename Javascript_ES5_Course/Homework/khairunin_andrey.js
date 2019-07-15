@@ -1,6 +1,6 @@
 //ES5
 
-// Функция возвращающая класс объекта
+// Функция, возвращающая класс элемента
 // classOf([]) === "Array", classOf('') === "String", classOf(null) === "Null" и т. д.
 function classOf(elem) {
     return Object.prototype.toString.call(elem).slice(8, -1);
@@ -38,7 +38,7 @@ function defineCentury(year) {
 
 //ES6 
 
-// Функция возвращающая класс объекта
+// Функция, возвращающая класс элемнета
 // classOf([]) === "Array", classOf('') === "String", classOf(null) === "Null" и т. д.
 const classOf = elem => Object.prototype.toString.call(elem).slice(8, -1);
 

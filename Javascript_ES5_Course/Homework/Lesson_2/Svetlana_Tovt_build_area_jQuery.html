@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Area builder</title>
+    <link rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: absolute;
+      }
+
+      .box {
+        min-width: 25%;
+        min-height: 30%;
+        border-radius: 20px;
+        padding: 20px;
+      }
+
+      .box__input {
+        height: 48px;
+        width: 100%;
+        border: 1px solid #75b7e0;
+        font-size: 20px;
+        box-shadow: 0px 3px 3px rgba(117, 183, 224, 0.25);
+        border-radius: 25px;
+        color: #75b7e0;
+        text-indent: 5%;
+      }
+      .box__input:focus {
+        border: none;
+        outline: none;
+        border: 2px solid #75b7e0;
+        border-radius: 25px;
+        box-shadow: 0px 4px 4px rgba(117, 183, 224, 0.25);
+      }
+      .box__button {
+        height: 48px;
+        width: 100%;
+        border: 2px solid #1d1c1d;
+        font-size: 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        color: #ffffff;
+        background: #75b7e0;
+        margin: 25px 0;
+      }
+
+      .box__button:focus {
+        outline: none;
+      }
+
+      #area {
+        min-width: 25%;
+        min-height: 30%;
+
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      table {
+        border-collapse: collapse;
+        border: none;
+      }
+      .green {
+        height: 15px;
+        width: 15px;
+        background: #629954;
+        border: none;
+      }
+
+      .white {
+        height: 15px;
+        width: 15px;
+        background: white;
+        border: none;
+      }
+
+      .result {
+        font-size: 20px;
+        color: #4a7894;
+      }
+    </style>
+    <script>
+      $(function() {
+        $("button").on("click", function() {
+          const n = $("#length").val();
+          $("#area").empty();
+
+          function buildTable(n) {
+            const number_of_rows = 2 * n - 1;
+            const number_of_cols = 2 * n - 1;
+
+            let table_body = '<table>';
+
+            let count = n - 1;
+
+            for (let i = 0; i < number_of_rows; i++) {
+              table_body += "<tr>";
+              for (let j = 0; j < number_of_cols; j++) {
+                if (
+                  j >= Math.abs(count) &&
+                  j < number_of_cols - Math.abs(count)
+                ) {
+                  table_body += "<td class='green'></td>";
+                } else {
+                  table_body += "<td class='white'></td>";
+                }
+              }
+              table_body += "</tr>";
+
+              count--;
+            }
+
+            table_body += "</table>";
+
+            $("#area").append(table_body);
+          }
+          buildTable(n);
+
+          $(".result").html(function calculateArea() {
+            let area;
+
+            if (n >= 1) {
+              area = Math.pow(n, 2) + Math.pow(n - 1, 2);
+              return `<p class="resultText"> Площадь полигона ${area}<p>`;
+            }
+
+            return `<p class="resultText"> Неверно введены данные. Введите число от 1 и более.<p>`;
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="app" class="box">
+        <input
+          class="box__input"
+          id="length"
+          type="text"
+          placeholder="Введите длину грани полигона"
+        />
+
+        <button class="box__button">
+          Нарисовать полигон
+        </button>
+        <div class="result"> </div>
+      </div>
+      <div id="area"> </div>
+    </div>
+    <script></script>
+  </body>
+</html>

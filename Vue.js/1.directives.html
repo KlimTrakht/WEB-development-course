@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vue App</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+<div id="app">
+    <h1>My Vue app</h1>
+    <p>{{ text }}</p>
+    <img :src="imageSource"
+         :title="text">
+
+    <div :title="randNum"
+         v-if="shown">
+        Hover over me for your random number!
+    </div>
+    <div v-else>
+        Alternative text
+    </div>
+
+    <p v-html="message"></p>
+
+    <ul>
+        <template v-for="color in colors">
+            <li v-if="color.primary"
+            >{{ color.text }}</li>
+            <li v-if="color.primary"
+                @click="showColor(color.text)"
+            >hardcoded text</li>
+        </template>
+    </ul>
+
+    <p>
+        <button @click="reveal">Reveal the Secret Number</button>
+    </p>
+
+
+
+
+</div>
+</body>
+</html>
+
+<script>
+
+    var app = new Vue({
+        el: '#app',
+        data: {
+            text: 'Hello World',
+            imageSource: 'http://via.placeholder.com/350x150',
+            randNum: Math.floor(Math.random() * 50) + 1,
+            shown: false,
+            message: '<h1>Hello!</h1>',
+            // colors: ['red','green','blue','yellow','orange']
+            colors: [
+                {
+                    text: 'red',
+                    primary: true
+                },
+                {
+                    text: 'green',
+                    primary: false
+                },
+                {
+                    text: 'blue',
+                    primary: true
+                },
+                {
+                    text: 'yellow',
+                    primary: true
+                },
+                {
+                    text: 'orange',
+                    primary: false
+                }
+            ]
+        },
+        methods: {
+            reveal() {
+                alert(`Here's the secret number: ${this.randNum}`)
+            },
+            showColor(color){
+                alert(color)
+            }
+        }
+    });
+</script>

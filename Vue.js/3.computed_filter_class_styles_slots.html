@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vue App</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+<div id="app">
+    <h1>{{ 'Computed properties' | capitalize }}</h1>
+
+
+    <counter>
+        <h3 slot="header">Outer head</h3>
+        <p slot="footer">Outer text</p>
+        aqweertyuio
+    </counter>
+
+
+
+    <p>Change the text</p>
+    <input
+            type="text"
+            placeholder="text..."
+            v-model="text"
+    >
+    <p :class="{ active: person.isActive }">Original text: {{ text }}</p>
+    <p :class="{ active: person.isActive, inactive: !person.isActive }">Lowercase text: {{ lowerText }}</p>
+    <p :class="person.isActive ? 'active' : 'inactive'">Lowercase text: {{ lowerText }}</p>
+
+    <p :style="style">Original text: {{ text }}</p>
+
+    <h2 :class="defaultClass | capitalize">{{ text | capitalize | changestring(3) }}</h2>
+
+
+
+
+</div>
+</body>
+</html>
+
+<script>
+
+
+    var counter = {
+
+        data() {
+            return {
+                count: 0,
+            }
+        },
+        template:  `
+        <div>
+          <slot name="header"></slot>
+          <div>Count: {{this.count}} Incremented by {{ localAddNum }}</div>
+          <button class="vue-btn" @click="increment">Increment by 1</button>
+          <button class="vue-btn" @click="changeProp">Change <slot name="footer"></slot> prop</button>
+          <slot></slot>
+        </div>
+      `,
+        methods: {
+            increment(){
+                this.count+= this.localAddNum
+            },
+            changeProp(){
+                this.localAddNum = 100;
+            }
+        },
+        mounted(){
+            this.localAddNum = this.addNum
+        }
+    };
+
+    Vue.component('counter', counter);
+
+    // Vue.filter('capitalize', function (value) {
+    //     if(!value) return ''
+    //     value = value.toString();
+    //     return value.toUpperCase()
+    // });
+
+
+    var app = new Vue({
+        el: '#app',
+        data: {
+            text: 'default text',
+            person: {
+                isActive: true
+            },
+            defaultClass: 'defclass',
+            style: {
+                color: 'red',
+                fontSize: '40px'
+            }
+        },
+        computed: {
+            lowerText() {
+                return this.text.toLowerCase()
+            }
+        },
+        components: {
+            counter
+        },
+        beforeCreate(){
+            console.log('beforeCreate', this.text)
+        },
+        created(){
+            console.log('created', this.text)
+        },
+        mounted(){
+            console.log('mounted', this.text)
+        },
+        updated(){
+            console.log('updated', this.text)
+        },
+        filters: {
+            capitalize: function (value) {
+                if(!value) return ''
+
+                value = value.toString();
+
+                return value.toUpperCase()
+            },
+            changestring: function (value, index) {
+                if(!value) return ''
+                value = value.toString();
+
+                return value.charAt(index)
+            }
+        }
+    });
+
+
+
+
+</script>

@@ -1,28 +1,43 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h3>{{ title }}</h3>
+    <button class="btn btn-primary"
+            @click="fetchCharacter">Test</button>
+
+    <Character
+            v-for="(id, index) in initial_ids"
+            :id="id"
+            :key="index"
+    />
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+  import Character from './components/Character'
 
 export default {
   name: 'app',
+  data(){
+    return {
+      title: 'Star Wars Team',
+      initial_ids: [1, 13, 14],
+      url: process.env.VUE_APP_URL
+    }
+  },
+  methods: {
+    fetchCharacter() {
+      fetch(`${this.url}people/`, {
+        method: 'GET'
+      })
+        .then(response => response.json())
+              .then(json => console.log(json))
+    }
+  },
   components: {
-    HelloWorld
+    Character
   }
 }
 </script>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

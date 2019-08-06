@@ -7,4 +7,7 @@ Vue.config.productionTip = false
 
 new Vue({
   render: h => h(App),
+  data: {
+    url: process.env.VUE_APP_URL
+  }
 }).$mount('#app')

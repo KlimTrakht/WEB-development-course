@@ -23,6 +23,15 @@ const router = new VueRouter({
   mode: 'history'
 });
 
+
+Vue.mixin({
+  mounted() {
+    console.log('hello from global mixin!')
+  }
+});
+
+const EventBus = new Vue();
+
 new Vue({
   render: h => h(App),
   router,

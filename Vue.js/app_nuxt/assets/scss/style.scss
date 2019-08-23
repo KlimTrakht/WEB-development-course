@@ -4,3 +4,11 @@
 .page-enter, .page-leave-to {
   opacity: 0;
 }
+
+
+.custom-enter-active, .custom-leave-active {
+  transition: opacity .5s;
+}
+.custom-enter, .custom-leave-to {
+  opacity: 0;
+}

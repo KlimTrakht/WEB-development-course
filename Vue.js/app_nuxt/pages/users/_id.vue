@@ -1,14 +1,14 @@
 <template>
-    <div>User {{ $route.params.id}}</div>
+  <div>User {{ $route.params.id}}</div>
 </template>
 
 <script>
-    export default {
-        name: "_id",
-      validate({params}){
-          return /^\d+$/.test(params.id)
-      }
+  export default {
+    name: "id",
+    validate({params}) {
+      return /^\d+$/.test(params.id)
     }
+  }
 </script>
 
 <style scoped>

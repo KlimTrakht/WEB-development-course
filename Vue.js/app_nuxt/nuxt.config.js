@@ -35,6 +35,13 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '@/plugins/core-components',
+    '@/plugins/bus',
+    '@/plugins/axios',
+
+    // {src: '@/plugins/core-components', ssr: false}
+    // {src: '@/plugins/core-components', mode: 'client'},
+    // {src: '@/plugins/core-components', mode: 'server'}
   ],
 
   /*
@@ -51,6 +58,7 @@ export default {
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+    baseUrl: 'http://localhost/api/v1'
   },
 
   /*
@@ -62,5 +70,21 @@ export default {
     */
     extend(config, ctx) {
     }
-  }
+  },
+
+  router: {
+    middleware: 'auth'
+  },
+
+  // generate: {
+  //   dir: './dist/subdir',
+  //   routes: function () {
+  //     return [
+  //
+  //     ]
+  //   }
+  // }
+
+
+
 }

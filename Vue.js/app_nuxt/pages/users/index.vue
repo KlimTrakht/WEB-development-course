@@ -11,11 +11,12 @@
     <p>User</p>
 
   </div>
-    
+
 </template>
 
 <script>
-    export default {
-        name: "about"
-    }
+  export default {
+    name: "about",
+    transition: 'custom'
+  }
 </script>

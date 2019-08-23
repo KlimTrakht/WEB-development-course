@@ -22,6 +22,7 @@
 
         <nuxt-link to="/about" class="button--green">About us</nuxt-link>
         <nuxt-link to="/users" class="button--grey">Users</nuxt-link>
+        <nuxt-link to="/cabinet" class="button--grey">Cabinet</nuxt-link>
 
 
 
@@ -38,7 +39,31 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
+  },
+  data(){
+    return {
+      defaultProp: 'default value',
+    }
+  },
+  // middleware: 'auth'
+/*
+  async asyncData({req, res, app, error }){
+    let {data} = await app.$axios.get('https://www.googleapis.com/books/v1/volumes?q=javascript')
+    console.log('data', data)
+    return { books: data }
+
+    // error({statusCode: 500, message: "Shit happens"})
   }
+  */
+
+  fetch ({ store, params, app }) {
+    return app.$axios.get('https://www.googleapis.com/books/v1/volumes?q=javascript').then(res =>{
+      console.log('books', res.data)
+      store.commit('books/setBooks', res.data)
+    })
+  }
+
+
 }
 </script>
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Default</h1>
+    <h1>Static Page</h1>
     <nuxt />
   </div>
 </template>
